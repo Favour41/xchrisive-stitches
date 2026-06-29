@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XCHRISIVE STITCHES | Premium Tailoring</title>
-    <!-- Using high-end typography for a premium futuristic feel -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -92,7 +91,7 @@
             text-decoration: none;
             color: var(--white);
             text-align: center;
-            transition: all 0.4s ease;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -100,17 +99,32 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
+        .premium-card span {
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        .premium-card p {
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Enhanced hover state for clearer visual feedback */
         .premium-card:hover {
             border-color: var(--gold);
             transform: translateY(-10px);
             background: #222;
         }
 
-        .premium-card span {
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .premium-card:hover span {
+            transform: scale(1.05);
+        }
+
+        .premium-card:hover p {
+            opacity: 1;
         }
 
         /* Services Section */
@@ -178,7 +192,6 @@
 </head>
 <body>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>XCHRISIVE STITCHES</h1>
@@ -187,7 +200,6 @@
         </div>
     </section>
 
-    <!-- Connect Section -->
     <section class="container" id="connect">
         <h2 class="section-title">Connect With Us</h2>
         <div class="connect-grid">
@@ -195,30 +207,29 @@
                 <span>Email</span>
                 <p>xchrisive@gmail.com</p>
             </a>
-            <a href="https://wa.me/2347031559996" class="premium-card" target="_blank">
+            <a href="https://wa.me/2347031559996" class="premium-card" target="_blank" rel="noopener">
                 <span>WhatsApp</span>
                 <p>Direct Chat</p>
             </a>
-            <a href="https://youtube.com/@xchrisive_himself?si=69axXsJs8dY_E9aE" class="premium-card" target="_blank">
+            <a href="https://youtube.com/@xchrisive_himself?si=69axXsJs8dY_E9aE" class="premium-card" target="_blank" rel="noopener">
                 <span>YouTube</span>
                 <p>Fashion Inspo</p>
             </a>
-            <a href="https://www.facebook.com/xchrisive" class="premium-card" target="_blank">
+            <a href="https://www.facebook.com/xchrisive" class="premium-card" target="_blank" rel="noopener">
                 <span>Facebook</span>
                 <p>Official Page</p>
             </a>
-            <a href="https://instagram.com/xchrisive_himself" class="premium-card" target="_blank">
+            <a href="https://instagram.com/xchrisive_himself" class="premium-card" target="_blank" rel="noopener">
                 <span>Instagram</span>
                 <p>@xchrisive_himself</p>
             </a>
-            <a href="https://vm.tiktok.com/ZSCyJwm6Q/" class="premium-card" target="_blank">
+            <a href="https://vm.tiktok.com/ZSCyJwm6Q/" class="premium-card" target="_blank" rel="noopener">
                 <span>TikTok</span>
                 <p>Join the Crew</p>
             </a>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="container" id="services">
         <h2 class="section-title">Exclusive Services</h2>
         <div class="services-list">
@@ -231,18 +242,15 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
     <section class="cta-section">
         <div class="container">
-            <a href="https://wa.me/2347031559996" class="btn-premium">Book / Order via WhatsApp</a>
+            <a href="https://wa.me/2347031559996" class="btn-premium" target="_blank" rel="noopener">Book / Order via WhatsApp</a>
         </div>
     </section>
 
-    <!-- Ready for GitHub + Netlify Hosting -->
     <footer style="text-align: center; padding: 3rem; font-size: 0.8rem; opacity: 0.5;">
         &copy; 2026 XCHRISIVE STITCHES. All Rights Reserved.
     </footer>
 
 </body>
 </html>
-
