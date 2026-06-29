@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XCHRISIVE STITCHES | Premium Tailoring</title>
+    <!-- Using high-end typography for a premium futuristic feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --black: #0a0a0a;
+            --white: #ffffff;
+            --spacing: 2rem;
+        }
+
+        /* Mobile-first responsive design principles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Establishing a cinematic, intentional visual hierarchy */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1594932224828-b4b057bfe4f2?auto=format&fit=crop&q=80&w=2048'); /* Reference to high-quality 2K imagery */
+            background-size: cover;
+            background-position: center;
+            padding: var(--spacing);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .hero blockquote {
+            font-style: italic;
+            max-width: 600px;
+            border-left: 2px solid var(--gold);
+            padding-left: 1rem;
+            margin: 0 auto;
+            opacity: 0.8;
+        }
+
+        /* Interactive hover effects for a premium experience */
+        .connect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 5rem 0;
+        }
+
+        .premium-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 2rem;
+            text-decoration: none;
+            color: var(--white);
+            text-align: center;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .premium-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            background: #222;
+        }
+
+        .premium-card span {
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Services Section */
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            margin: 4rem 0;
+        }
+
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 5rem;
+        }
+
+        .service-tag {
+            border: 1px solid var(--gold);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .service-tag:hover {
+            background: var(--gold);
+            color: var(--black);
+        }
+
+        /* CTA Styling */
+        .cta-section {
+            padding: 5rem 0;
+            text-align: center;
+            background: #111;
+        }
+
+        .btn-premium {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            padding: 1.5rem 3.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-premium:hover {
+            background: var(--white);
+            transform: scale(1.05);
+        }
+
+        /* Ensuring complete responsiveness across devices */
+        @media (max-width: 768px) {
+            .hero { padding-top: 10vh; }
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>XCHRISIVE STITCHES</h1>
+            <p>Modern Men’s Fashion • Tailoring • Style Identity</p>
+            <blockquote>“Precision tailoring. Premium presence. Timeless confidence.”</blockquote>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="container" id="connect">
+        <h2 class="section-title">Connect With Us</h2>
+        <div class="connect-grid">
+            <a href="mailto:xchrisive@gmail.com" class="premium-card">
+                <span>Email</span>
+                <p>xchrisive@gmail.com</p>
+            </a>
+            <a href="https://wa.me/2347031559996" class="premium-card" target="_blank">
+                <span>WhatsApp</span>
+                <p>Direct Chat</p>
+            </a>
+            <a href="https://youtube.com/@xchrisive_himself?si=69axXsJs8dY_E9aE" class="premium-card" target="_blank">
+                <span>YouTube</span>
+                <p>Fashion Inspo</p>
+            </a>
+            <a href="https://www.facebook.com/xchrisive" class="premium-card" target="_blank">
+                <span>Facebook</span>
+                <p>Official Page</p>
+            </a>
+            <a href="https://instagram.com/xchrisive_himself" class="premium-card" target="_blank">
+                <span>Instagram</span>
+                <p>@xchrisive_himself</p>
+            </a>
+            <a href="https://vm.tiktok.com/ZSCyJwm6Q/" class="premium-card" target="_blank">
+                <span>TikTok</span>
+                <p>Join the Crew</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container" id="services">
+        <h2 class="section-title">Exclusive Services</h2>
+        <div class="services-list">
+            <div class="service-tag">Tailored Suits & Jackets</div>
+            <div class="service-tag">Polos & Joggers</div>
+            <div class="service-tag">Senator Wears & Pants</div>
+            <div class="service-tag">Quality Shoes</div>
+            <div class="service-tag">Men’s Fashion Accessories</div>
+            <div class="service-tag">Outfit Inspirations</div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <a href="https://wa.me/2347031559996" class="btn-premium">Book / Order via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Ready for GitHub + Netlify Hosting -->
+    <footer style="text-align: center; padding: 3rem; font-size: 0.8rem; opacity: 0.5;">
+        &copy; 2026 XCHRISIVE STITCHES. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
